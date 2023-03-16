@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      enabled: true
+      server:
+        git:
+          uri: https://private@github.com/daniel-rincon-garcia/vectorialConfiguration.git
+          clone-on-start: true

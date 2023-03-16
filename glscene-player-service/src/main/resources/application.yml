@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: player
+  profiles:
+    active: development
+  config:
+    import:
+      - optional:configserver:http://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@localhost:8888/
+
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    enabled: false
+#    registerWithEureka: false
+#    fetchRegistry: true
+#    service-url.defaultZone: http://${eureka.instance.hostname}}:${server.port}/eureka/
+
